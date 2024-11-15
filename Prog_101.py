@@ -20,6 +20,6 @@ odp_gpt= client.chat.completions.create(
     max_tokens = 1500,
     top_p=1.0,
     )
-print(odp_gpt.choices[0].message.content)
+
 with open ("artykul.html", 'w') as plik:
     plik.write(odp_gpt.choices[0].message.content)
